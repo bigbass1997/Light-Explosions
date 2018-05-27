@@ -124,7 +124,7 @@ public class PrimaryPanel extends Panel {
 			if(Gdx.input.isButtonPressed(Buttons.LEFT) && !mouseClicked){
 				if(mx > 30){
 					pfac.addParticle(new SparkParticle(pfac, mx, my,
-							Color.rgba8888(Math.max(0.5f, SRand.getR().nextFloat()), Math.max(0.5f, SRand.getR().nextFloat()), Math.max(0.8f, SRand.getR().nextFloat()), 1)));
+							Color.rgba8888(SRand.getR().nextFloat(), SRand.getR().nextFloat(), SRand.getR().nextFloat(), 1)));
 				}
 				
 				mouseClicked = true;
