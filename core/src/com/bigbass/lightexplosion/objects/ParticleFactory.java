@@ -1,6 +1,7 @@
 package com.bigbass.lightexplosion.objects;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -10,12 +11,12 @@ public class ParticleFactory {
 	
 	private List<Particle> particles;
 	private List<Particle> addQueue;
-	private List<Particle> removeQueue;
+	private HashSet<Particle> removeQueue;
 	
 	public ParticleFactory(){
 		particles = new ArrayList<Particle>();
 		addQueue = new ArrayList<Particle>();
-		removeQueue = new ArrayList<Particle>();
+		removeQueue = new HashSet<Particle>();
 	}
 	
 	public void addParticle(Particle p){
