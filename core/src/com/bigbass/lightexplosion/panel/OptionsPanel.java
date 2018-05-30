@@ -93,7 +93,7 @@ public class OptionsPanel extends Panel {
 		stage.addActor(tmp5);
 
 		// Explosion Angles - Step
-		SliderGroup tmp6 = new SliderGroup(0, 360, 1, 25, 580, 200, SkinManager.getSkin("fonts/computer.ttf", 20));
+		SliderGroup tmp6 = new SliderGroup(1, 360, 1, 25, 580, 200, SkinManager.getSkin("fonts/computer.ttf", 20));
 		tmp6.slider.setValue(op.sparkThetaInteration);
 		guiElements.add(tmp6);
 		stage.addActor(tmp6);
